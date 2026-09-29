@@ -8,12 +8,12 @@
 
 ---
 
-## 📌 TL;DR
+## TL;DR
 **TizenInstaller** is a portable, standalone tool that installs official Galaxy Store `.tpk` and `.wgt` packages on Samsung Tizen smartwatches over Wi-Fi and Bluetooth, without dead certificate servers or `error: -27` / `-32` getting in the way. No complex SDK setup required — one click to install.
 
 ---
 
-## ⌚ Supported Devices
+## Supported Devices
 * **Gear S2 / Gear S3 Classic & Frontier**
 * **Samsung Galaxy Watch (SM-R800 / SM-R805 / SM-R810)**
 * **Galaxy Watch Active 1 & Active 2**
@@ -24,7 +24,7 @@
 
 ---
 
-## 📥 Downloads & Verification
+## Downloads & Verification
 
 Pre-compiled ready-to-use binaries are located in the [`release/`](release/) folder:
 
@@ -35,7 +35,7 @@ Pre-compiled ready-to-use binaries are located in the [`release/`](release/) fol
 
 ---
 
-## 💡 What Works and What Doesn't
+## What Works and What Doesn't
 
 - **Works:** Any app or watch face that was officially signed and released on the Galaxy Store (Spotify, Samsung apps, commercial watch faces, utilities). Their distributor signature chain is already trusted by the watch's internal root store.
 - **Doesn't work:** Brand-new custom watch faces built from scratch in Galaxy Watch Studio without a valid distributor certificate (Samsung's signing server is permanently dead).
@@ -43,7 +43,7 @@ Pre-compiled ready-to-use binaries are located in the [`release/`](release/) fol
 
 ---
 
-## 🚀 How to Use (Windows PC)
+## How to Use (Windows PC)
 
 ### 1. Prepare the Watch
 1. On your watch, navigate to **Settings → About Watch → Software**.
@@ -66,7 +66,7 @@ Pre-compiled ready-to-use binaries are located in the [`release/`](release/) fol
 
 ---
 
-## ⚙️ How It Works (Technical Overview)
+## How It Works (Technical Overview)
 
 Standard `sdb install app.tpk` talks to the high-level installation daemon, which performs strict developer certificate checks and fails with `error: -27` (`CERTIFICATE_ROOT_NOT_FOUND`) or `error: -12` (`Non trusted certificate`).
 
@@ -84,7 +84,7 @@ If needed, TizenInstaller features a **4-tier escalation fallback chain**:
 
 ---
 
-## 📱 Android Companion App
+## Android Companion App
 A work-in-progress Android client is included in the [`android/`](android/) directory. It includes:
 - Pure Kotlin SDB client over Wi-Fi.
 - Direct **Bluetooth RFCOMM bridge** reverse-engineered from Samsung's official `sdboverbt` tool (`UUID: 39E9AE15-62E4-4529-9019-8A2C07A27051` and `b6a09fda-886e-45ad-9c36-5050db58c8ff`).
@@ -92,11 +92,11 @@ A work-in-progress Android client is included in the [`android/`](android/) dire
 
 ---
 
-## 🤖 Development & AI Assistance
+## Development & AI Assistance
 Transparency: I used AI as an assistant and force multiplier. The research direction, finding the `-w` mount-install bypass flag, reverse-engineering the SDB communication flow, and testing on hardware were done by myself. AI assisted with analyzing heavily obfuscated Java bytecode/DEX structures and assembling the modern One UI interface.
 
 ---
 
-## 📜 License
+## License
 This project is open-source under the [MIT License](LICENSE).
 Tizen is a trademark of The Linux Foundation. Samsung and Galaxy are trademarks of Samsung Electronics Co., Ltd.
