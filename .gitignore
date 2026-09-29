@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.spec.bak
+desktop/build/
+desktop/dist/
+*.egg-info/
+
+# Gradle / Android
+.gradle/
+build/
+*/build/
+app/build/
+*.iml
+.idea/
+local.properties
+.DS_Store
+captures/
+.externalNativeBuild/
+.cxx/
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
