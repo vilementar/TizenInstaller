@@ -93,7 +93,7 @@ A work-in-progress Android client is included in the [`android/`](android/) dire
 ---
 
 ## Development & AI Assistance
-Transparency: I used AI as an assistant and force multiplier. The research direction, finding the `-w` mount-install bypass flag, reverse-engineering the SDB communication flow, and testing on hardware were done by myself. AI assisted with analyzing heavily obfuscated Java bytecode/DEX structures and assembling the modern One UI interface.
+Transparency: I used AI as an assistant and force multiplier. The research direction, finding the `-w` mount-install bypass flag, reverse-engineering the SDB communication flow, and testing on hardware were done by myself. AI assisted with analyzing heavily obfuscated Java bytecode/DEX structures and assembling the modern UI.
 
 ---
 
